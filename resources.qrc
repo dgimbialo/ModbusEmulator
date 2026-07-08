@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/qmldir</file>
+        <file>qml/Main.qml</file>
+        <file>qml/Theme.qml</file>
+        <file>qml/StatusIndicator.qml</file>
+        <file>qml/StatTile.qml</file>
+        <file>qml/ValueChart.qml</file>
+        <file>qml/RegisterDelegate.qml</file>
+        <file>qml/RegisterView.qml</file>
+        <file>qml/GroupDialog.qml</file>
+        <file>qml/RegisterNameDialog.qml</file>
+        <file>qml/CoilsView.qml</file>
+        <file>qml/LogPanel.qml</file>
+        <file>qml/SimulationPanel.qml</file>
+        <file>qml/DashboardView.qml</file>
+        <file>qml/ConnectionDrawer.qml</file>
+        <file>icons/app_64.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,16 @@
+# Build output
+build/
+out/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# User-specific CMake configuration (machine-local Qt paths)
+CMakeUserPresets.json
+CMakePresets.json
+
+# Misc
+*.user
+*.log

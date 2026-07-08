@@ -1,0 +1,98 @@
+{
+    "connection":  {
+                       "baudRate":  115200,
+                       "dataBits":  8,
+                       "parity":  0,
+                       "portName":  "CNCA0",
+                       "stopBits":  1,
+                       "tcpPort":  502,
+                       "type":  1,
+                       "unitId":  1
+                   },
+    "data":  {
+                 "coils":  [
+                               3,
+                               7
+                           ],
+                 "discreteInputs":  [
+                                        1
+                                    ],
+                 "holdingRegisters":  {
+                                          "20004":  16384,
+                                          "5":  3636
+                                      },
+                 "inputRegisters":  {
+                                        "2":  777
+                                    }
+             },
+    "fileType":  "ModbusEmulatorProject",
+    "ui":  {
+               "holdingGroups":  [
+                                     {
+                                         "endAddress":  9,
+                                         "name":  "Test Group",
+                                         "startAddress":  0
+                                     },
+                                     {
+                                         "endAddress":  20010,
+                                         "name":  "Flags",
+                                         "startAddress":  20000
+                                     }
+                                 ],
+               "inputGroups":  [
+                                   {
+                                       "endAddress":  7,
+                                       "name":  "Sensors",
+                                       "startAddress":  0
+                                   }
+                               ],
+               "simulation":  {
+                                  "generators":  [
+                                                     {
+                                                         "active":  true,
+                                                         "address":  0,
+                                                         "maxVal":  300,
+                                                         "minVal":  100,
+                                                         "name":  "Temperature",
+                                                         "period":  5000,
+                                                         "targetType":  3,
+                                                         "waveform":  "Sine"
+                                                     }
+                                                 ],
+                                  "interval":  150
+                              },
+               "coilGroups":  [
+                                  {
+                                      "endAddress":  31,
+                                      "name":  "Demo Coils",
+                                      "startAddress":  0
+                                  }
+                              ],
+               "discreteGroups":  [
+                                      {
+                                          "endAddress":  31,
+                                          "name":  "Demo Discrete",
+                                          "startAddress":  0
+                                      }
+                                  ],
+               "holdingMeta":  {
+                                   "5":  {
+                                             "name":  "Motor speed setpoint",
+                                             "bits":  {
+                                                          "2":  "Run enable",
+                                                          "9":  "Alarm reset",
+                                                          "11":  "Manual mode"
+                                                      }
+                                         }
+                               },
+               "inputMeta":  {
+                                 "2":  {
+                                           "name":  "Temperature sensor",
+                                           "bits":  {
+                                                        "0":  "Sensor OK"
+                                                    }
+                                       }
+                             }
+           },
+    "version":  1
+}
